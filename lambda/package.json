@@ -1,0 +1,19 @@
+{
+  "name": "comments-aws",
+  "version": "1.0.0",
+  "description": "Api for storing comments in dynamodb",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region eu-central-1 --api-module index --policies policies --configure-db",
+    "deploy": "claudia update",
+    "reconfigure": "claudia update --configure-db"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.127.0",
+    "claudia-api-builder": "^2.5.1",
+    "moment": "^2.19.1",
+    "request": "^2.83.0"
+  }
+}

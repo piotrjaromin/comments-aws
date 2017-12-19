@@ -1,0 +1,29 @@
+.comments {
+    padding: 1em;
+    background-color: #deebf8;
+}
+
+.em-1 {
+    padding: 1em;
+}
+
+
+.comment {
+    padding: 1em;
+    margin-bottom: 1me;
+    background-color: #f3f8fc;
+}
+
+.comment-meta {
+    font-style: italic;
+    font-size: 10;
+    padding-bottom: 1em;
+}
+
+.error-msg {
+    color: red;
+}
+
+.add-comment {
+
+}
