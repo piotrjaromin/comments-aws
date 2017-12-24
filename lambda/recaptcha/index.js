@@ -7,7 +7,7 @@ function create ( config ) {
 
         return new Promise( (resolve, reject) => {
 
-            log("Processing isHuman");
+            log("Processing isHuman, secret is ", config.secret);
             if(body['g-recaptcha-response'] === undefined || body['g-recaptcha-response'] === '' || body['g-recaptcha-response'] === null) {
                 log("missing captcha");
                 return resolve(false);

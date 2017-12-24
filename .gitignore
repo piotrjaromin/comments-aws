@@ -1,0 +1,15 @@
+._*
+.DS_Store
+.DS_Store?
+.idea
+.Spotlight-V100
+.Trashes
+docs
+Icon?
+node_modules
+frontend/README.md
+lambda/README.md
+yarn.lock
+claudia.json
+package-lock.json
+frontend/build

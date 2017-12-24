@@ -4,7 +4,6 @@
   "description": "Api for storing comments in dynamodb",
   "main": "index.js",
   "scripts": {
-    "create": "claudia create --region eu-central-1 --api-module index --policies policies --configure-db",
     "deploy": "claudia update",
     "reconfigure": "claudia update --configure-db"
   },
