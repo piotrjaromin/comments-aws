@@ -17,7 +17,7 @@ npm install -g webpack-dev-server
 
 ## backend - lambda
 
-First we need to create dynamodb database for our commnets:
+First we need to create dynamodb database for our comments:
 ```bash
 aws dynamodb create-table --table-name comments-aws --attribute-definitions AttributeName=id,AttributeType=S AttributeName=articleId,AttributeType=S --key-schema AttributeName=articleId,KeyType=HASH AttributeName=id,KeyType=RANGE   --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --query TableDescription.TableArn --output text
 ```
@@ -52,3 +52,11 @@ webpack-dev-server
 ```
 
 frontend application should start working on [http://localhost:8080](http://localhost:8080).
+
+# concepts
+
+* created database is called comments-aws, and this name is provided during lambda creation(as env parameter)
+* recaptcha is used to validate if human tried to create comment
+* database and frontend has articleId parameter. By changing articleId value in ```frontend/src/index.js``` you can select comments for different articles
+* there is no part of this tutorial that tells you how to host frontend
+* there are no tests :(
